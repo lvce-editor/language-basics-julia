@@ -1,0 +1,12 @@
+{
+  "id": "builtin.language-basics-julia",
+  "name": "Language Basics Julia",
+  "description": "Provides syntax highlighting and bracket matching in Julia files.",
+  "languages": [
+    {
+      "id": "julia",
+      "extensions": [".jl"],
+      "tokenize": "src/tokenizeJulia.js"
+    }
+  ]
+}
