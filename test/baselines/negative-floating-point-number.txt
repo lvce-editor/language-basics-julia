@@ -1,0 +1,4 @@
+Punctuation
+Numeric
+Punctuation
+Numeric
