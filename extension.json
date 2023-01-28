@@ -1,55 +1,12 @@
 {
-  "id": "builtin.language-basics-json",
-  "name": "Language Basics JSON",
-  "description": "Provides syntax highlighting and bracket matching in JSON files.",
+  "id": "builtin.language-basics-julia",
+  "name": "Language Basics Julia",
+  "description": "Provides syntax highlighting and bracket matching in Julia files.",
   "languages": [
     {
-      "id": "json",
-      "extensions": [
-        ".json",
-        ".bowerrc",
-        ".jscsrc",
-        ".webmanifest",
-        ".js.map",
-        ".css.map",
-        ".ts.map",
-        ".har",
-        ".jslintrc",
-        ".jsonld",
-        ".geojson",
-        ".ipynb",
-        ".jsonc",
-        ".eslintrc",
-        ".eslintrc.json",
-        ".jsfmtrc",
-        ".jshintrc",
-        ".swcrc",
-        ".hintrc",
-        ".babelrc",
-        ".prettierrc",
-        ".sublime-project",
-        ".code-snippets",
-        ".tour",
-        ".heapsnapshot",
-        ".code-workspace"
-      ],
-      "fileNames": [
-        "composer.lock",
-        ".watchmanconfig",
-        ".all-contributorsrc",
-        ".imgbotconfig",
-        ".stylelintrc",
-        ".parcelrc",
-        ".publishrc",
-        ".whitesource",
-        ".mention-bot",
-        "pdfjs.config",
-        "tsconfig.tsbuildinfo",
-        ".gdntsa",
-        ".nycrc",
-        "manifest.webapp"
-      ],
-      "tokenize": "src/tokenizeJson.js"
+      "id": "julia",
+      "extensions": [".jl"],
+      "tokenize": "src/tokenizeJulia.js"
     }
   ]
 }
