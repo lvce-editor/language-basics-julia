@@ -52,6 +52,8 @@ export const initialLineState = {
   state: State.TopLevelContent,
 }
 
+export const hasArrayReturn = true
+
 const RE_KEYWORD =
   /^(?:baremodule|begin|break|catch|ccall|const|continue|do|else|elseif|end|export|false|finally|for|function|global|if|import|in|isa|let|local|macro|module|quote|return|true|try|using|where|while)\b/
 const RE_WHITESPACE = /^\s+/
@@ -169,18 +171,12 @@ export const tokenizeLine = (line, lineState) => {
         throw new Error('no')
     }
     index += next[0].length
-    tokens.push({
-      type: token,
-      length: next[0].length,
-    })
+    const tokenLength = next[0].length
+    index += tokenLength
+    tokens.push(token, tokenLength)
   }
   return {
     state,
     tokens,
   }
 }
-
-tokenizeLine(
-  `abs(mandelbrot(complex(x, y))) < 2 ? print("*") : print(" ")`,
-  initialLineState
-)
