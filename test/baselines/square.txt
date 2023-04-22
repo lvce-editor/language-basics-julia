@@ -1,6 +1,11 @@
 VariableName
+Whitespace
 Punctuation
+Whitespace
 VariableName
-Numeric
 Punctuation
+Numeric
+Whitespace
+Punctuation
+Whitespace
 VariableName

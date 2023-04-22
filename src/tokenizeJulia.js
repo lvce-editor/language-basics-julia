@@ -170,7 +170,6 @@ export const tokenizeLine = (line, lineState) => {
         state
         throw new Error('no')
     }
-    index += next[0].length
     const tokenLength = next[0].length
     index += tokenLength
     tokens.push(token, tokenLength)
