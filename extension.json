@@ -5,8 +5,11 @@
   "languages": [
     {
       "id": "julia",
-      "extensions": [".jl"],
+      "extensions": [
+        ".jl"
+      ],
       "tokenize": "src/tokenizeJulia.js"
     }
-  ]
+  ],
+  "repository": "https://github.com/lvce-editor/language-basics-julia"
 }
